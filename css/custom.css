@@ -1,0 +1,21 @@
+.cover{
+    display: none;
+    background-position: center;
+    background-size: cover;
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.cover.open {
+    display: block;
+}
+
+.cover h1{
+    text-shadow: -16px 6px 15px #000000;
+    color: white;
+    font-size: 10rem;
+    font-family: "Sacramento", Arial, serif;
+}
