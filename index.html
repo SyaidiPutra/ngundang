@@ -237,7 +237,7 @@
 						<h2>Countdown Events</h2>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row position-relative">
 					<div class="display-t">
 						<div class="display-tc">
 							<div class="simply-countdown simply-countdown-one"></div>
@@ -320,44 +320,32 @@
 
 				<div class="row">
 				
-					<div class="col-md-6 animate-box">
+					<div class="col-md-6 animate-box mb-5">
 						<div class="fh5co-video fh5co-bg">
-							<div class="overlay"></div>
+							<!-- <div class="overlay"></div> -->
 							<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.6214619676166!2d115.3714182695562!3d-2.3419336598674065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMjAnMzEuMCJTIDExNcKwMjInMTkuNCJF!5e0!3m2!1sid!2sid!4v1682321853593!5m2!1sid!2sid"  style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 					
-					<div class="col-md-6">
+					<div class="col-md-6 mb-5">
+
 						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
 							<span class="icon">
-								<i class="icon-calendar"></i>
+								<i class="icon-location"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>We Organized Events</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
-									cumque dicta adipisci architecto culpa amet.</p>
+								<h3>Alamat</h3>
+								<p>Jl. Lampihong-Guntung RT. 2 Ds. Sungai Tabuk, Kec. Lampihong, Balaangan</p>
 							</div>
 						</div>
 
 						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
 							<span class="icon">
-								<i class="icon-image"></i>
+								<i class="icon-map"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Photoshoot</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
-									cumque dicta adipisci architecto culpa amet.</p>
-							</div>
-						</div>
-
-						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-							<span class="icon">
-								<i class="icon-video"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Video Editing</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
-									cumque dicta adipisci architecto culpa amet.</p>
+								<h3>Map</h3>
+								<p><a href="http://" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Buka Google Maps</a></p>
 							</div>
 						</div>
 
@@ -371,7 +359,7 @@
 		</div>
 
 
-		<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+		<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/gallery/DSC00150.JPG);">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row animate-box">
@@ -383,18 +371,18 @@
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
 						<form class="form-inline">
-							<div class="col-md-4 col-sm-4">
+							<div class="col-md-8 col-sm-8">
 								<div class="form-group">
 									<label for="name" class="sr-only">Name</label>
 									<input type="name" class="form-control" id="name" placeholder="Name">
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-4">
+							<!-- <div class="col-md-4 col-sm-4">
 								<div class="form-group">
-									<label for="email" class="sr-only">Email</label>
+									<label for="email" class="sr-only">Alamat</label>
 									<input type="email" class="form-control" id="email" placeholder="Email">
 								</div>
-							</div>
+							</div> -->
 							<div class="col-md-4 col-sm-4">
 								<button type="submit" class="btn btn-default btn-block">I am Attending</button>
 							</div>
@@ -481,7 +469,8 @@
 			$(".cover").remove()
 		}
 
-		var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+		// var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+		var d = new Date("2023-04-29 08:00");
 
 		// default example
 		simplyCountdown('.simply-countdown-one', {
