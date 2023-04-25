@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>The Wedding of Syaidi and Pina	A</title>
+	<title>The Wedding of Syaidi and Pina A</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -319,14 +319,17 @@
 				</div>
 
 				<div class="row">
-				
+
 					<div class="col-md-6 animate-box mb-5">
 						<div class="fh5co-video fh5co-bg">
 							<!-- <div class="overlay"></div> -->
-							<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.6214619676166!2d115.3714182695562!3d-2.3419336598674065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMjAnMzEuMCJTIDExNcKwMjInMTkuNCJF!5e0!3m2!1sid!2sid!4v1682321853593!5m2!1sid!2sid"  style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.6214619676166!2d115.3714182695562!3d-2.3419336598674065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMjAnMzEuMCJTIDExNcKwMjInMTkuNCJF!5e0!3m2!1sid!2sid!4v1682321853593!5m2!1sid!2sid"
+								style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
-					
+
 					<div class="col-md-6 mb-5">
 
 						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
@@ -345,7 +348,8 @@
 							</span>
 							<div class="feature-copy">
 								<h3>Map</h3>
-								<p><a href="http://" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Buka Google Maps</a></p>
+								<p><a href="https://goo.gl/maps/uxHarMeh9yzbRN1w7" target="_blank" rel="noopener noreferrer"
+										class="btn btn-primary">Buka Google Maps</a></p>
 							</div>
 						</div>
 
@@ -430,6 +434,8 @@
 		</div>
 	</div>
 
+	<audio id="audio" src=""></audio>
+
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
@@ -460,6 +466,27 @@
 	<script src="js/main.js"></script>
 
 	<script>
+
+		// lagu
+		var isPlay = 0
+		var lsit = [
+			'DIA-SAMMY SIMORANGKIR',
+			'KISAH SEMPURNA-MAHALINI'
+		]
+
+		var audioElement = document.getElementById('audio');
+		soung = lsit[Math.floor(Math.random() * lsit.length)];
+		audioElement.setAttribute('src', 'lagu/' + soung + '.mp3');
+
+		function musik() {
+			audioElement.play()
+		}
+
+
+
+
+		console.log(lsit)
+
 		if ($('.cover').hasClass('open')) {
 			$('body').css('overflow', 'hidden')
 		}
@@ -467,6 +494,7 @@
 		function buka() {
 			$('body').removeAttr('style')
 			$(".cover").remove()
+			musik()
 		}
 
 		// var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
